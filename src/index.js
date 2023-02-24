@@ -7,12 +7,10 @@ const ComputerRouter = require('./Routers/ComputerRouter')
 
 const app = express()
 
-
 // middelwares
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 app.use(express.static('public'))
-
 
 // Routers
 app.use('/Brands', BrandRouter)
